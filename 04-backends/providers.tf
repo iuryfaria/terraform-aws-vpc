@@ -10,10 +10,19 @@ terraform {
       version = "~> 3.0"
     }
   }
+
+  backend "s3" {
+    bucket = "terraform-course-iuryfaria-remote-backend"
+    key    = "04-backends/state.tfstate"
+    region = "sa-east-1"
+  }
 }
+
 
 provider "aws" {
   region = "sa-east-1"
 }
+
+
 
 
