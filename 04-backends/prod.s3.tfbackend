@@ -1,0 +1,5 @@
+    #For illustration purposes, not activaley used.
+    
+    bucket = "terraform-course-iuryfaria-remote-backend"
+    key    = "04-backends/prod/state.tfstate"
+    region = "sa-east-1"
